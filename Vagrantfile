@@ -24,6 +24,7 @@ Vagrant.configure(2) do |config|
     agent.vm.network "forwarded_port", guest: 50000, host: 50001
     agent.vm.network "forwarded_port", guest: 2376, host: 2376
     agent.vm.network "forwarded_port", guest: 4243, host: 4243
+    agent.vm.network "forwarded_port", guest: 9999, host: 9999
   end
 
 end
