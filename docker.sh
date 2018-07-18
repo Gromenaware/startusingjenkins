@@ -9,7 +9,7 @@ apt-get install -y --no-install-recommends \
         python-minimal zip python-simplejson \
         gnupg2 \
         software-properties-common
-apt-get install -y openjdk-8-jdk openjdk-8-jre
+apt-get install -y openjdk-8-jdk openjdk-8-jre git
 apt-get remove docker docker-engine docker.io
 
 curl -fsSL get.docker.com -o get-docker.sh
