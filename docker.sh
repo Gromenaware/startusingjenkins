@@ -6,11 +6,10 @@ apt-get install -y --no-install-recommends \
         ca-certificates \
         curl \
         software-properties-common \
-        python-minimal zip python-simplejson \
+        python-is-python3 zip python3-simplejson \
         gnupg2 \
         software-properties-common
-apt-get install -y openjdk-8-jdk openjdk-8-jre git
-apt-get remove docker docker-engine docker.io
+apt-get install -y default-jre default-jdk git
 
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
