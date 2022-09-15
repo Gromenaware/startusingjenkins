@@ -30,5 +30,4 @@ Vagrant.configure(2) do |config|
       agent.vm.network :forwarded_port, guest: i, host: i
     end
   end
-
 end
