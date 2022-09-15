@@ -9,7 +9,7 @@ apt-get install -y --no-install-recommends \
         python-is-python3 zip python3-simplejson \
         gnupg2 \
         software-properties-common
-apt-get install -y default-jre default-jdk git
+apt-get install -y openjdk-9-jdk openjdk-9-jre git
 
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh

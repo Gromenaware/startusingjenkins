@@ -2,7 +2,7 @@
 set -eux
 apt update 
 apt upgrade -y
-apt install default-jdk -y
+apt install openjdk-9-jdk -y
 mkdir -p /usr/share/keyrings
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
