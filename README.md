@@ -11,7 +11,7 @@ It is needed to have Vagrant installed and running on the OS.
 Clone this repository with:
 
 ```shell
-git clone https://bitbucket.org/agile611/startusingjenkins.git
+git clone https://github.com/Gromenaware/startusingjenkins.git
 ```
 
 ## Initial configuration
