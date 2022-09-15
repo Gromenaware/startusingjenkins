@@ -1,6 +1,6 @@
 Vagrant.configure(2) do |config|
   config.vm.define "jenkins" do |jenkins|
-    jenkins.vm.box = "bento/ubuntu-18.04"
+    jenkins.vm.box = "bento/ubuntu-22.04"
     jenkins.vm.network "private_network", ip: "192.168.11.11"
     jenkins.vm.hostname = "jenkins"
     jenkins.vm.provision :shell, :path => "jenkins.sh"
@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "sonarqube" do |sonarqube|
-    sonarqube.vm.box = "bento/ubuntu-18.04"
+    sonarqube.vm.box = "bento/ubuntu-22.04"
     sonarqube.vm.network "private_network", ip: "192.168.11.12"
     sonarqube.vm.hostname = "sonarqube"
     sonarqube.vm.provision :shell, :path => "sonarqube.sh"
@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
   end
   
   config.vm.define "agent" do |agent|
-    agent.vm.box = "bento/ubuntu-18.04"
+    agent.vm.box = "bento/ubuntu-22.04"
     agent.vm.network "private_network", ip: "192.168.11.13"
     agent.vm.hostname = "agent"
     agent.vm.provision :shell, :path => "docker.sh"
